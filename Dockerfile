@@ -63,7 +63,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 
 ENV PG_MAJOR 10
 ENV PG_VERSION 10.16-1.stretch
-ENV PG_REPO 10
+ENV PG_REPO 10.16
 
 RUN set -ex; \
         echo "deb http://repo.postgrespro.ru/1c-archive/pg1c-$PG_REPO/debian stretch main" > /etc/apt/sources.list.d/postgrespro.list; \
